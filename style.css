@@ -26,7 +26,6 @@ a:hover {
     letter-spacing: 4px;
 }
 nav {
-    font-size: 18px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,7 +43,8 @@ main {
     display: flex;
 }
 .nav-list li {
-    letter-spacing: 1px;
+    gap: ;
+    letter-spacing: 3px;
     margin-left: 32px;
 }
 .mobile-menu {
@@ -86,7 +86,6 @@ main {
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
-
     .nav-list li {
         margin-left: 0;
         opacity: 0;
@@ -123,7 +122,9 @@ main {
 }
 
 /*Geral*/
-                    
+* {
+    box-sizing: border-box;
+}            
 :root {
     font-size: 62.2%; /*1rem = 10px*/
     --cor-primaria--: rgb(0, 155, 129);
@@ -222,6 +223,7 @@ p {
 
 /*Botão*/
 button {
+    
     /*Altura*/
     height: 6.2rem;
     /*Largura*/
@@ -257,6 +259,7 @@ button {
     /*Margem direita*/
     margin-right: 1rem;
     user-select: none;
+    margin: center;
     
 }
 /*Animação do botão*/
