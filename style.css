@@ -61,16 +61,12 @@ main {
 
 @media (max-width: 800px) {
     .btn {
-            margin-left: 10%;
-            position: center;
-
-            /*Altura*/
-            height: 7.2rem;
-            /*Largura*/
-            width: 32.3rem;
-            font-size: 20px;
+        /*Altura*/
+        height: 7.2rem;
+        /*Largura*/
+        width: 32.3rem;
+        font-size: 20px;
     }
-
     header {
         overflow: hidden;
     }
