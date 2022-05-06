@@ -61,6 +61,7 @@ main {
 
 @media (max-width: 800px) {
     .btn {
+            margin-left: 15%;
             /*Altura*/
             height: 7.2rem;
             /*Largura*/
