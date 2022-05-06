@@ -26,6 +26,7 @@ a:hover {
     letter-spacing: 4px;
 }
 nav {
+    font-size: 18px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,16 +60,18 @@ main {
 }
 
 @media (max-width: 800px) {
+
     header {
         width: 100%;
         position: fixed; 
         overflow: hidden;
     }
     .nav-list{
+        font-size: 20px;
         position: fixed;
         top: 8vh;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 92vh;
         background: #23232e;
         flex-direction: column;
@@ -85,6 +88,7 @@ main {
         display: block;
     }
     .nav-list.active {
+        scroll-snap-align: start;
         transform: translateX(0);
     }
 }
