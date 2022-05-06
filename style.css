@@ -44,7 +44,7 @@ main {
     display: flex;
 }
 .nav-list li {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin-left: 32px;
 }
 .mobile-menu {
