@@ -72,8 +72,6 @@ main {
     }
 
     header {
-        width: 100%;
-        position: fixed; 
         overflow: hidden;
     }
     .nav-list{
