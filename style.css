@@ -69,12 +69,12 @@ main {
     }
     header {
         width: 100%
-        position: fixed;
+        position: absolute;
         overflow: hidden;
     }
     .nav-list{
         font-size: 20px;
-        position: fixed;
+        position: absolute;
         top: 8vh;
         right: 0;
         width: 100%;
