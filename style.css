@@ -266,3 +266,9 @@ button {
     height: auto;
     gap: 0.2rem; 
 }
+#meuIG {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration:none;
+}
