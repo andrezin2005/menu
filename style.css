@@ -61,6 +61,7 @@ main {
 
 @media (max-width: 800px) {
     .btn {
+            margin-left: 10%;
             position: center;
 
             /*Altura*/
