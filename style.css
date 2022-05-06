@@ -1,9 +1,16 @@
+body {
+    align-items: center;
+    justify-content:center;
+}
 * {
     margin: 0;
     padding: 0;
 }
 
-a {
+p a {
+    color:blue;
+}
+nav a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
@@ -52,7 +59,7 @@ main {
 }
 
 @media (max-width: 800px) {
-    body {
+    header {
         overflow: hidden;
     }
     .nav-list{
@@ -93,11 +100,11 @@ main {
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
 }
-  
+
 .mobile-menu.active .line2 {
     opacity: 0;
 }
-  
+
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
@@ -108,7 +115,7 @@ main {
     font-size: 62.2%; /*1rem = 10px*/
     --cor-primaria--: rgb(0, 155, 129);
     --cor-titulo--: hsla(210, 11%, 15%, 1);
-    --cor-paragrafo--: hsla(210, 9%, 31%, 1);
+    --cor-paragrafo--: black;
     --cor-kwai--: blue;
 
     --nav-largura--: 7.2rem
@@ -234,7 +241,7 @@ button {
     /*Espaço entre os elementos*/
     gap: 1.2rem;
     /*Display*/
-    display: flexbox;
+    display: inline;
     /*Margem esquerda*/
     margin-left: 1rem;
     /*Margem direita*/
