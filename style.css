@@ -60,6 +60,13 @@ main {
 }
 
 @media (max-width: 800px) {
+    .btn {
+            /*Altura*/
+            height: 7.2rem;
+            /*Largura*/
+            width: 32.3rem;
+            font-size: 20px;
+    }
 
     header {
         width: 100%;
