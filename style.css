@@ -43,7 +43,6 @@ main {
     display: flex;
 }
 .nav-list li {
-    font-size:20px;
     letter-spacing: 3px;
     margin-left: 32px;
 }
@@ -62,7 +61,7 @@ main {
 @media (max-width: 800px) {
     header {
         width: 100%;
-        position:fixed;
+        position: fixed; 
         overflow: hidden;
     }
     .nav-list{
@@ -134,21 +133,18 @@ main {
 }
 
 /*Corpo*/ 
-.body {
-    font-family: 'DM Sans';
+body {
+    width: 100vw;
+    justify-content:center;
 }
 /*Cabeçario*/   
 .header {
-    margin-top: calc(4.1rem + var(--nav-largura--));
+    margin-top: calc(4.1rem + var(--nav-largura--))
+    display: block;
 }
 .header::before {
-    content: "";
-    width: 100vw;
-    height: 100vw;
     /*cor de fundo do site*/
-    height: calc(408vw + var(--nav-largura--));
-    background: var(--cor-primaria--);
-    display: block;
+    display: inline-block;
 
     
 }
@@ -268,9 +264,4 @@ button {
     width: auto;
     height: auto;
     gap: 0.2rem; 
-}
-#meuIG {
-    font-size: 20px;
-    letter-spacing: 4px;
-    text-decoration:none;
 }
