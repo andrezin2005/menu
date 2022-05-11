@@ -45,7 +45,7 @@ main {
 }
 
 
-@media (min-width: 758px) {
+@media (min-width: 818px) {
     button.btn {
         /*Altura*/
         height: 6.2rem;
@@ -92,11 +92,15 @@ main {
         display: none;
     }
     ul {
+        font-size:24px;
         gap: 17px;
         display: inline-flex;
         flex-direction: row;
         justify-content: space-between;
 
+    }
+    .logo {
+        font-size: 30px
     }
      
 }
@@ -280,7 +284,7 @@ body .menu-expanded .logo {
 
 }
 /*Quando o menu ta fechado*/
-@media (max-width: 758px) {
+@media (max-width: 818px) {
     .btn {
         margin-bottom: 5%;
         display: block;
