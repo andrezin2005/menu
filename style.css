@@ -48,7 +48,6 @@ main {
     height: 92vh;
 }
 
-
 @media (min-width: 818px) {
     button.btn {
         /*Altura*/
@@ -108,7 +107,6 @@ main {
     }
      
 }
-
 /*Geral*/
 * {
     box-sizing: border-box;
@@ -123,7 +121,6 @@ main {
     --nav-largura--: 7.2rem;
     --largura-tela--: 758px
 }
-
 .wrapper {
     /*Altura*/
     width: 37.5rem;
@@ -140,8 +137,8 @@ body {
     justify-content:center;
 }
 /*Cabeçario*/   
-#header {
-    margin-top: (--nav-largura--)
+header {
+    margin-top: 5.2rem
 }
 #header::before {
     content: "";
@@ -335,6 +332,7 @@ body .menu-expanded .logo {
         letter-spacing: 4px;
         justify-content: space-around;
     }
+
     body.menu-expanded .menu { 
         display: flex;
         align-items: center;
@@ -349,11 +347,16 @@ body .menu-expanded .logo {
         height: 100vh;
 
         padding-top: 5%;
-        
+ 
     }
-    body.menu-expanded nav {
-        position: relative;
+    nav div.menu {
+        transform: translateY(100%);
     }
+    body.menu-expanded nav div.menu {
+        transition: transform 450ms;
+        transform: translateY(0%);    
+    }
+    
 
     body.menu-expanded button {
         align-items: center;
@@ -364,4 +367,15 @@ body .menu-expanded .logo {
         z-index: 100;
         position: relative;
     }
+}
+
+/*Final*/
+.ending {
+    background-color: none;
+}
+.ending h3 {
+    font-size: 20px;
+}
+.ending p {
+    margin-bottom: 0;
 }
