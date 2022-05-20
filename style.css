@@ -424,7 +424,7 @@ svg {
     
     .ending {
         height: 20%;
-        width: 100vw;
+        width: 100%;
         display: block;
         position: relative;
         background: var(--cor-primaria--);
@@ -448,23 +448,14 @@ svg {
 @media (max-width: 668px) {
     .ending {
         height: 20%;
-        width: 100vw;
+        width: 100%;
         display: block;
         position: relative;
         background: var(--cor-primaria--);
         align-items: center;
         justify-content: space-around;
     }
-    .ending {
-        height: 20%;
-        width: 100%;
-        display: block;
-        position: relative;
-        background: var(--cor-primaria--);
-        
-        align-items: center;
-        justify-content: space-between;
-    }
+
     .ending h3 {
         display: flex;
         align-items: center;
@@ -510,7 +501,7 @@ svg:hover {
     left: 10px;
 
     background: black;
-    width: 80vw;
+    width: 96%;
     height: 50px;
     border-radius: 40px;
     padding: 10px;
