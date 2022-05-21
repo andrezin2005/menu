@@ -1,4 +1,4 @@
-
+/*Estilização dos botoes*/
 #listaIG{
     display: flex;
     justify-content: center;
@@ -107,6 +107,7 @@ body {
 }
 /*Cabeçario*/   
 header {
+
     margin-top: auto
 }
 #header::before {
@@ -177,7 +178,7 @@ p {
 /*Cor de fundo*/
 .insta {background: orangered}
 .kwai {background: orange}
-.tiktok {background: grey}
+.tiktok {background: rgb(85, 85, 85)}
 
 /*Botão*/
 header button {
@@ -530,7 +531,35 @@ body .menu-expanded .logo {
     }
 }
 
-/*Final*/
+/*Estilização do efeito arcodeon*/
+.OpenClose {
+    display: none;   
+}
+.acordeon {
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #444;
+    background-color: #eee;
+    cursor: pointer;
+    padding: 20px;
+    width: 76%;
+    border: none;
+    text-align: center;
+    outline: none;
+    transition: 0.8s;
+}
+button.acordeon:hover {
+    color: #eee;
+    background: rgb(7, 19, 5);
+    transition: 0.5s;
+}
+.estrutura {
+    display: flex;
+    flex-direction: column;
+    transition: 0.8s;
+}
+
+/*Final do site*/
 svg {
     cursor: pointer;
 }
