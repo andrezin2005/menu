@@ -32,9 +32,9 @@
         <div class="menu">
             <ul id="menu">
                 <li><a href="/">Início</a></li>
-                <li><a href="#instagram" onclick="closeMenu()">Instagrans</a></li>
-                <li><a href="#tiktok" onclick="closeMenu()">TikToks</a></li>
-                <li><a href="#kwai" onclick="closeMenu()">Kwais</a></li>
+                <li><a href="#listaIG" onclick="closeMenu(),OpenIG()">Instagrans</a></li>
+                <li><a href="#listaTK" onclick="closeMenu(),OpenTK()">TikToks</a></li>
+                <li><a href="#listaKW" onclick="closeMenu(),OpenKW()">Kwais</a></li>
                 <li><a href="https://wa.me/" target="_blank" onclick="closeMenu()">Contato</a></li>
             </ul>
         </div>
@@ -43,187 +43,198 @@
     </body>
     
     <header class="header">
-           
         <h3>BOAS-VINDAS AO DIVULGA PERFIS 👋</h3> <br>
         <h1>Olá, meu nome é André, e com este site você conseguirá ir aos meus perfis e de algumas pessoas conhecidas minhas.</h1>
 
-        <!--Parágrafo-->
-        <p>Para ser redirecionado ao nossos instagrans só precisa cliclar no meio do botão escrito INSTRAGRAM (E NOME DA PESSOA).</p>
-        
-        <!--Sistema de busca-->
-        <div class="search-box">
-            <input id="Search" class="search-txt" type="text" name="entrada" search="listaIG" onkeypress="lower()" placeholder="Escreva um perfil da lista de IG" onkeypress="lower()">
+        <div class="estrutura">
+            <!--Sistema de busca-->
+            <button class="acordeon" onclick="OpenCloseIG()">Clique para mostrar os instagrans</button>
+            
+            <!--Área dos intagrans-->
+            <section id="sectionIG" class="OpenClose">
+                <!--Parágrafo-->
+                <p>Para ser redirecionado ao nossos instagrans só precisa cliclar no meio do botão escrito INSTRAGRAM (E NOME DA PESSOA).</p>
+            
+                <div class="search-box">
+                    <input id="Search" class="search-txt" type="text" name="entrada" search="listaIG" onkeypress="lower()" placeholder="Escreva um perfil da lista de IG" onkeypress="lower()">
+                            
+                    <a class="search-btn">
+                        <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
+                        <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
+                    </a>
+                </div>
+                <i class="fas fa-search"></i> <br>
+                        
+                <ul id="listaIG">     
+                    <li nome = "andré André">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/andrezin_18_/" target="_blank">INSTAGRAM DO ANDRÉ</a>
+                        </button>
+                    </li>
                     
-            <a class="search-btn">
-                <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
-                <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
-            </a>
+                    <li nome = "dennis">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/dennis_r.silva/" target="_blank">INSTAGRAM DO DENNIS</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "guilerme henrique">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/guilhermehenrique1002/" target="_blank">INSTAGRAM DO GUILHERME HENRIQUE</a>
+                        </button> 
+                    </li>
+                    
+                    <li nome = "danilo">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/danpfc_ff/" target="_blank">INSTAGRAM DO DANILO</a>
+                        </button> 
+                    </li>
+                    
+                    <li nome = "kamilly">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/kamillyformoz/" target="_blank">INSTAGRAM DA KAMILLY</a>
+                        </button>        
+                    </li>
+                    
+                    <li nome = "joyciele">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/joycieleribeiro/" target="_blank">INSTAGRAM DA JOYCIELE</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "débora">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/deboravette/" target="_blank">INSTAGRAM DA DÉBORA</a>
+                        </button>  
+                    </li>
+                    
+                    <li nome = "brysla">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/brysla/" target="_blank">INSTAGRAM DA BRYSLA</a>
+                        </button> 
+                    </li>
+                    
+                    <li nome = "maysa">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/rezendetoledo/" target="_blank">INSTAGRAM DA MAYSA</a>
+                        </button> 
+                    </li>
+                    
+                    <li nome = "lindelaine">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/brandemburglindelaine/" target="_blank">INSTAGRAM DA LINDELAINE</a>
+                        </button>  
+                    </li>
+                    
+                    <li nome = "esteffany">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/esteffany_costaa/" target="_blank">INSTAGRAM DA ESTEFFANY</a>
+                        </button> 
+                    </li>
+                    
+                    <li nome = "hyzadora">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/hyza_martins/" target="_blank">INSTAGRAM DA HYZADORA</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "robson">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/robson_junior_402_/" target="_blank">INSTAGRAM DO ROBSON</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "wanderson">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/wanderson_lucas.95/" target="_blank">INSTAGRAM DO WANDERSON</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "guilherme aráujo">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/gui_araujosantos/" target="_blank">INSTAGRAM DO GUILHERME ARÁUJO</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "kaio">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/kaiohenriquedasilva/" target="_blank">INSTAGRAM DO KAIO</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "ítalo">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/italocbraganca/" target="_blank">INSTAGRAM DO ÍTALO</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "pedro">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/pedroenrikefritz/" target="_blank">INSTAGRAM DO PEDRO</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "guilherme mendes">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/gui_jidoky/" target="_blank">INSTAGRAM DO GUILHERME MENDES</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "gabriel pinheiro">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/gaba_pinheiro/" target="_blank">INSTAGRAM DO GABRIEL PINHEIRO</a>
+                        </button>
+                    </li>
+                    
+                    <li nome = "juliano">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/julianosoaresdossantos81/" target="_blank">INSTAGRAM DO JULIANO</a>
+                        </button>
+
+                    </li>
+                    
+                    <li nome = "wevely">
+                        <button class="btn insta">
+                            <a class="linkBotao" href="https://www.instagram.com/wevelly_souza/" target="_blank">INSTAGRAM DO WEVELLY</a>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            
+            <button class="acordeon" onclick="OpenCloseTK()">Clique para mostrar os tiktoks</button>
+            <!--Área do tiktok-->
+            <section id="sectionTK" class="OpenClose">    
+                <p>Para ser redirecionado ao nossos tiktoks só precisa cliclar no meio do botão escrito TIKTOK (E NOME DA PESSOA).</p>
+                
+                <ul id="listaTK">
+                    <li nome = "instagram do dennis">
+                        <button class="btn tiktok">
+                            <a class="linkBotao" href="https://www.tiktok.com/@Dennisrodrigues02" target="_blank">TIKTOK DO DENNIS</a>
+                        </button>
+                    </li>
+                    <li nome = "instagram da joyciele">
+                        <button class="btn tiktok">
+                            <a class="linkBotao" href="https://www.tiktok.com/@joycieleribeiro" target="_blank">TIKTOK DA JOYCIELE</a>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Área do kwai-->
+            <button class="acordeon" onclick="OpenCloseKW()">Clique para mostrar os kwais</button>
+            <section id="sectionKW" class="OpenClose">  
+                <p>Para ser redirecionado ao nossos kwais só precisa cliclar no meio do botão escrito KWAI (E NOME DA PESSOA).</p>
+                
+
+                <ul id="listaKW">
+                    <li>
+                        <button class="btn kwai">
+                            <a class="linkBotao" href="https://s.kw.ai/u/rhMy1LCC" target="_blank">KWAI DO DENNIS</a>
+                        </button>
+                    </li>
+                </ul>
+            </section>
         </div>
-        <i class="fas fa-search"></i> <br>
-        
-        <!--Área dos intagrans-->
-        <ul id="listaIG">     
-            <li nome = "andré André">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/andrezin_18_/" target="_blank">INSTAGRAM DO ANDRÉ</a>
-                </button>
-            </li>
-            
-            <li nome = "dennis">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/dennis_r.silva/" target="_blank">INSTAGRAM DO DENNIS</a>
-                </button>
-            </li>
-            
-            <li nome = "guilerme henrique">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/guilhermehenrique1002/" target="_blank">INSTAGRAM DO GUILHERME HENRIQUE</a>
-                </button> 
-            </li>
-            
-            <li nome = "danilo">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/danpfc_ff/" target="_blank">INSTAGRAM DO DANILO</a>
-                </button> 
-            </li>
-            
-            <li nome = "kamilly">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/kamillyformoz/" target="_blank">INSTAGRAM DA KAMILLY</a>
-                </button>        
-            </li>
-            
-            <li nome = "joyciele">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/joycieleribeiro/" target="_blank">INSTAGRAM DA JOYCIELE</a>
-                </button>
-            </li>
-            
-            <li nome = "débora">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/deboravette/" target="_blank">INSTAGRAM DA DÉBORA</a>
-                </button>  
-            </li>
-            
-            <li nome = "brysla">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/brysla/" target="_blank">INSTAGRAM DA BRYSLA</a>
-                </button> 
-            </li>
-            
-            <li nome = "maysa">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/rezendetoledo/" target="_blank">INSTAGRAM DA MAYSA</a>
-                </button> 
-            </li>
-            
-            <li nome = "lindelaine">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/brandemburglindelaine/" target="_blank">INSTAGRAM DA LINDELAINE</a>
-                </button>  
-            </li>
-            
-            <li nome = "esteffany">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/esteffany_costaa/" target="_blank">INSTAGRAM DA ESTEFFANY</a>
-                </button> 
-            </li>
-            
-            <li nome = "hyzadora">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/hyza_martins/" target="_blank">INSTAGRAM DA HYZADORA</a>
-                </button>
-            </li>
-            
-            <li nome = "robson">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/robson_junior_402_/" target="_blank">INSTAGRAM DO ROBSON</a>
-                </button>
-            </li>
-            
-            <li nome = "wanderson">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/wanderson_lucas.95/" target="_blank">INSTAGRAM DO WANDERSON</a>
-                </button>
-            </li>
-            
-            <li nome = "guilherme aráujo">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/gui_araujosantos/" target="_blank">INSTAGRAM DO GUILHERME ARÁUJO</a>
-                </button>
-            </li>
-            
-            <li nome = "kaio">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/kaiohenriquedasilva/" target="_blank">INSTAGRAM DO KAIO</a>
-                </button>
-            </li>
-            
-            <li nome = "ítalo">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/italocbraganca/" target="_blank">INSTAGRAM DO ÍTALO</a>
-                </button>
-            </li>
-            
-            <li nome = "pedro">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/pedroenrikefritz/" target="_blank">INSTAGRAM DO PEDRO</a>
-                </button>
-            </li>
-            
-            <li nome = "guilherme mendes">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/gui_jidoky/" target="_blank">INSTAGRAM DO GUILHERME MENDES</a>
-                </button>
-            </li>
-            
-            <li nome = "gabriel pinheiro">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/gaba_pinheiro/" target="_blank">INSTAGRAM DO GABRIEL PINHEIRO</a>
-                </button>
-            </li>
-            
-            <li nome = "juliano">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/julianosoaresdossantos81/" target="_blank">INSTAGRAM DO JULIANO</a>
-                </button>
-
-            </li>
-            
-            <li nome = "wevely">
-                <button class="btn insta">
-                    <a class="linkBotao" href="https://www.instagram.com/wevelly_souza/" target="_blank">INSTAGRAM DO WEVELLY</a>
-                </button>
-            </li>
-        </ul>        
-        <!--Área do tiktok-->
-        <p>Para ser redirecionado ao nossos tiktoks só precisa cliclar no meio do botão escrito TIKTOK (E NOME DA PESSOA).</p>
-        
-
-        <ul id="listaTK">
-            <li nome = "instagram do dennis">
-                <button class="btn tiktok">
-                    <a class="linkBotao" href="https://www.tiktok.com/@Dennisrodrigues02" target="_blank">TIKTOK DO DENNIS</a>
-                </button>
-            </li>
-            <li nome = "instagram da joyciele">
-                <button class="btn tiktok">
-                    <a class="linkBotao" href="https://www.tiktok.com/@joycieleribeiro" target="_blank">TIKTOK DA JOYCIELE</a>
-                </button>
-            </li>
-        </ul>
-        <!--Área do kwai-->
-        
-        <p>Para ser redirecionado ao nossos kwais só precisa cliclar no meio do botão escrito KWAI (E NOME DA PESSOA).</p>
-        
-
-        <ul id="listaKW">
-            <li>
-                <button class="btn kwai">
-                    <a class="linkBotao" href="https://s.kw.ai/u/rhMy1LCC" target="_blank">KWAI DO DENNIS</a>
-                </button>
-            </li>
-        </ul>
         <footer class="ending">
             <h3>OBRIGADO POR VISITAR MEU SITE ✌️</h3> <br>
             <!--imagens-->
