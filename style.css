@@ -422,6 +422,11 @@ svg {
         align-items: center;
         justify-content: left;
     }
+    .logosIMG img {
+        display: block;
+        align-items: center;
+        justify-content: left;
+    }
     
     .ending {
         height: 20%;
@@ -458,7 +463,7 @@ svg {
         align-items: center;
         justify-content: space-around;
     }
-
+    
     .ending h3 {
         display: flex;
         align-items: center;
@@ -478,6 +483,11 @@ svg {
         align-items: center;
         justify-content: space-around;
     }
+    .logosIMG img {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
 }
 svg:hover {
@@ -486,13 +496,22 @@ svg:hover {
     transition: 0.8s;
 }
 .ending svg {
-    height: 15%;
-    width: 15%;
+    height: 10%;
+    width: 10%;
 }
 
+.ending img {
+    height: 10%;
+    width: 10%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 div.imagens a {
     display: contents;
 }
+
+
 
 
 /*Barra de pesquisa*/
