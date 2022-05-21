@@ -85,6 +85,7 @@ main {
     --cor-titulo--: hsla(210, 11%, 15%, 1);
     --cor-paragrafo--: black;
     --cor-kwai--: blue;
+    --cor-gradiente--: black,grey, red;
 
     --nav-largura--: 7.2rem;
     --largura-tela--: 758px
@@ -316,11 +317,6 @@ body .menu-expanded .logo {
 /*Quando o menu ta fechado*/
 @media (max-width: 818px) {
     
-    .search-box {
-        display: none;
-        opacity: 1;
-        visibility: ;
-    }
     .btn {
         margin-bottom: 5%;
         display: block;
@@ -499,7 +495,6 @@ svg:hover {
     height: 10%;
     width: 10%;
 }
-
 .ending img {
     height: 10%;
     width: 10%;
@@ -507,22 +502,26 @@ svg:hover {
     margin-left: 10px;
     margin-right: 10px;
 }
+.ending img:hover {
+    opacity: 0.6;
+    transition: 0.8s;
+}
+
+
 div.imagens a {
     display: contents;
 }
 
-
-
-
 /*Barra de pesquisa*/
 
 .search-box {
+    transition: 0.8s;
+    background: black;
     position: relative;
     top: auto;
     left: 10px;
 
-    background: black;
-    width: 96%;
+    width:96%;
     height: 50px;
     border-radius: 40px;
     padding: 10px;
@@ -534,10 +533,11 @@ div.imagens a {
 ::-webkit-input-placeholder{
     font-size: 17px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #aeaeae;
+    color: rgba(255, 255, 255, 0.753);
 }
+
 .search-txt {
-    color: wheat;
+    color: black;
     background: none;
     border: 0;
     outline: 0;
@@ -545,7 +545,6 @@ div.imagens a {
 
     font-size: 16px;
 
-    width: 0;
     transition: 0.4s;
     width: 94%;
     padding-left: 20px;
@@ -559,7 +558,7 @@ div.imagens a {
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .loupe-white {
     display: none;
@@ -567,8 +566,15 @@ div.imagens a {
 .loupe-blue {
     display: none;
 }
-.search-box:hover > .search-txt {
+.search-box:hover {
+    border: black;
+    background: rgba(109, 109, 109, 0.753);
+    transition: 0.8s;
+}
+.search-box:hover > ::-webkit-input-placeholder {
+    color: black;
 
+    transition: 0.8s;
 }
 .search-box:hover > .search-btn {
     /*background: #447ce7;*/
