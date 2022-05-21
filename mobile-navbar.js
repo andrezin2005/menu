@@ -5,57 +5,36 @@ function onScroll() {
         navigation.classList.remove("scroll")
     }
 }
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
-        this.activeMenu = "menu-expanded";
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks() {
-        this.navLinks.forEach((link, index) => {
-        link.style.animation
-            ? (link.style.animation = "")
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-                index / 7 + 0.3
-            }s`);
-        });
-    }
-
-    handleClick() {
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.body.classList.toggle(this.activeMenu);
-
-        this.animateLinks();
-    }
-
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-
-    init() {
-        if (this.mobileMenu) {
-        this.addClickEvent();
-        }
-        return this;
-    }
-    }
-
-const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-    );
-mobileNavbar.init();
 
 function openMenu() {
     document.body.classList.add("menu-expanded")
 }
 function closeMenu() {
     document.body.classList.remove("menu-expanded")
+}
+
+const sectionIG = document.getElementsByClassName(".acordeonIG")
+const sectionTK = document.getElementsByClassName(".acordeonTK")
+const sectionKW = document.getElementsByClassName(".acordeonKW")
+
+//Adiciona e remove a classe da seção
+function OpenCloseIG() {
+    this.sectionIG.classList.toggle("OpenClose")
+}
+function OpenCloseTK() {
+    this.sectionTK.classList.toggle("OpenClose")
+}
+function OpenCloseKW() {
+    this.sectionKW.classList.toggle("OpenClose")
+}
+
+//Remove a classe do link
+function OpenIG() {
+    this.sectionIG.classList.remove("OpenClose")
+}
+function OpenTK() {
+    this.sectionTK.classList.remove("OpenClose")
+}
+function OpenKW() {
+    this.sectionKW.classList.remove("OpenClose")
 }
