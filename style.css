@@ -55,12 +55,28 @@ h1 {
     /*Margem direita*/
     margin-right: 1rem;
     /*Tamanho da fonte*/
-    font-size: 3.4rem;
+    font-size: 3.8rem;
     /*Cor*/
     color: var(--cor-titulo--);
     /*Margem abaixo*/
     margin-bottom: 2.4rem;
 }
+/*Titulo 2*/
+h2 {
+    margin-top: 1.4rem;
+    /*Margem esquerda*/
+    margin-left: 1rem;
+    /*Margem direita*/
+    margin-right: 1rem;
+
+    justify-content: center;
+    /*Cor*/
+    color: black;
+    /*Tamanho da fonte*/
+    font-size: 3.2rem;
+    /*Margem abaixo*/
+    margin-bottom: 1.6rem;}
+
 /*Titulo 3*/ 
 h3 {
     /*Margem esquerda*/
@@ -72,7 +88,7 @@ h3 {
     /*Cor*/
     color: black;
     /*Tamanho da fonte*/
-    font-size: 1.7rem;
+    font-size: 2.6rem;
     /*Margem abaixo*/
     margin-bottom: 1.6rem;}
 /*Titulo 4*/ 
@@ -84,7 +100,7 @@ h4 {
     /*Cor*/
     color: black;
     /*Tamanho da fonte*/
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     /*Margem abaixo*/
     margin-bottom: 1.6rem;
 }
@@ -102,13 +118,45 @@ p {
     /*Cor*/
     color: var(--cor-paragrafo--);
     /*Margem abaixo*/
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.2rem;
+}
+e {
+    font-size: 1.4rem;
 }
 /*Cor de fundo*/
 .insta {background: orangered}
 .kwai {background: orange}
 .tiktok {background: rgb(85, 85, 85)}
 
+#listaMT {
+    display: block;
+}
+
+#Ref {
+    list-style: none;
+    display: block;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/*Estilos das fórmulas*/
+#formula {
+    font-size: 2.3rem;
+}
+.formulaESCR {
+    display: block;
+}
+.formulaIMG {
+    display: flex;
+}
+
+li section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    /*background: rgba(155, 155, 155, 0.486);*/
+}
 /*Botão*/
 header button {
     /*Altura*/
