@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divulga Perfis</title>
+    <title>Meus Estudos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <div class="navigation" onscroll="onScroll">
       <nav id="navigation">
         
-        <a class="logo" href="/">Divulga Perfis</a>
+        <a class="logo" href="/">Meus Estudos</a>
 
         <div class="botao">
             <button onclick="openMenu()" class="open-menu">
@@ -32,9 +32,9 @@
         <div class="menu">
             <ul id="menu">
                 <li><a href="/">Início</a></li>
-                <li><a href="#listaIG" onclick="closeMenu(),OpenIG()">Instagrans</a></li>
-                <li><a href="#listaTK" onclick="closeMenu(),OpenTK()">TikToks</a></li>
-                <li><a href="#listaKW" onclick="closeMenu(),OpenKW()">Kwais</a></li>
+                <li><a href="#LP" onclick="closeMenu()">Português</a></li>
+                <li><a href="#MT" onclick="closeMenu()">Matemática</a></li>
+                <li><a href="#QM" onclick="closeMenu()">Química</a></li>
                 <li><a href="https://wa.me/" target="_blank" onclick="closeMenu()">Contato</a></li>
             </ul>
         </div>
@@ -43,197 +43,136 @@
     </div>
     
     <header class="header">
-        <h3>BOAS-VINDAS AO DIVULGA PERFIS 👋</h3> <br>
-        <h1>Olá, meu nome é André, e com este site você conseguirá ir aos meus perfis e de algumas pessoas conhecidas minhas.</h1>
+        <h3>BOAS-VINDAS AO MEUS ESTUDOS 👋</h3> <br>
+        <h1>Olá, meu nome é André, e com este site irei resgistrar (da minha maneira) as matérias da escola</h1> <br>
 
         <div class="estrutura">
-            <!--Sistema de busca-->
-            <button class="acordeon" onclick="OpenCloseIG()">Clique para mostrar os instagrans</button>
-            
-            <!--Área dos intagrans-->
-            <section id="sectionIG" class="OpenClose">
-                <!--Parágrafo-->
-                <p>Para ser redirecionado ao nossos instagrans só precisa cliclar no meio do botão escrito INSTRAGRAM (E NOME DA PESSOA).</p>
-            
-                <div class="search-box">
-                    <input id="Search" class="search-txt" type="text" name="entrada" search="listaIG" onkeypress="lower()" placeholder="Escreva um perfil da lista de IG" onkeypress="lower()">
+            <!--Matérias-->
+            <div class="materias">
+                <h2 id="MT">Matemática</h2>
+                
+                <!--Área das matérias-->
+                <section id="sectionMT" class="">
+                    <div class="search-box">
+                        <input id="Search" class="search-txt" type="text" name="entrada" search="listaMT" onkeypress="lower()" placeholder="Escreva uma matéria de matemática" onkeypress="lower()">
+                                
+                        <a class="search-btn">
+                            <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
+                            <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                    <i class="fas fa-search"></i> <br>
                             
-                    <a class="search-btn">
-                        <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
-                        <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
-                    </a>
-                </div>
-                <i class="fas fa-search"></i> <br>
+                    <ul id="listaMT">     
+                        <li nome = "arranjo">
+                            <button class="acordeon" onclick="OpenCloseAJ()">Arranjo</button>
+                            <section id="sectionAJ" class="OpenClose">
+                                <h3>Introdução:</h3>
+                                <p>
+                                    Chama-se <strong>arranjo simples</strong>, pois são agrupamentos formados com <em>p</em> elementos de um conjunto de <em>n</em> elementos.</span>
+                                </p>
+
+                                <p>
+                                    <span>Por exemplo: os números de três algarismos formados pelos elementos (1, 2, 3 e 4) são: 123, 132, 421, 423, 342, e assim por diante. Cada um desses números é um arranjo diferente dos elementos (1, 2, 3 e 4).</span>
+                                </p>
+
+                                <p>
+                                    <span>Assim, os arranjos são os agrupamentos nos quais <strong>a ordem de seus elementos faz diferença</strong>. Ou seja, mesmo que os elementos de dois arranjos sejam os mesmos, esses arranjos podem ser diferentes.</span>
+                                </p>
+
+                                <!--Fórmula-->
+                                <div class="formulaESCR">
+                                    <p><span>A fórmula usada em arranjo simples é:</span></p>
+                                    <p>
+                                        <img alt="Fórmula do arranjo simples" title="Fórmula do arranjo simples" src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/mb/d/analise-combinatoria-arranjos-simples.jpg" id="132356202063013207">
+                                    </p>
+                                    <span>
+                                            <ul id="Ref">
+                                                <li>A = Quantidade de combinações possíveis nessas condições.</li>
+                                                <li>n = Números de elemntos</li>
+                                                <li>p = Números de subconjuntos</li>
+                                                <li>! = Fatorial</li>
+                                            </ul>
+                                    </span>
+                                </div>
+
+                                <h4>Exemplo:</h4>
+                                <p>
+                                    <span>1) Um cadeado possui 3 rodelas numeradas de 0 a 9. Quantas combinações com 3 algarismos diferentes existem?</span>
+                                </p>
+
+                                <p>
+                                    <span>Para a primeira rodela, temos 10 possíveis escolha. Para a segunda rodela, não podemos repetir o elemento usado na primeira, então temos 9 possíveis escolhas para a segunda. E para a terceira rodela, não podemos repetir o elemento da primeira nem da segunda, então temos 8 possíveis escolhas para a terceira.</span>
+                                </p>
+                                <p><span>A resolução do problema é:</span></p>
+                                <p>
+                                    <strong>A<e>3,10</e> = 10.9.8 / 8 = 720</strong>
+                                </p>
+                                
+                            </section>
+                        </li>
                         
-                <ul id="listaIG">     
-                    <li nome = "andré André">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/andrezin_18_/" target="_blank">INSTAGRAM DO ANDRÉ</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "dennis">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/dennis_r.silva/" target="_blank">INSTAGRAM DO DENNIS</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "guilerme henrique">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/guilhermehenrique1002/" target="_blank">INSTAGRAM DO GUILHERME HENRIQUE</a>
-                        </button> 
-                    </li>
-                    
-                    <li nome = "danilo">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/danpfc_ff/" target="_blank">INSTAGRAM DO DANILO</a>
-                        </button> 
-                    </li>
-                    
-                    <li nome = "kamilly">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/kamillyformoz/" target="_blank">INSTAGRAM DA KAMILLY</a>
-                        </button>        
-                    </li>
-                    
-                    <li nome = "joyciele">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/joycieleribeiro/" target="_blank">INSTAGRAM DA JOYCIELE</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "débora">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/deboravette/" target="_blank">INSTAGRAM DA DÉBORA</a>
-                        </button>  
-                    </li>
-                    
-                    <li nome = "brysla">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/brysla/" target="_blank">INSTAGRAM DA BRYSLA</a>
-                        </button> 
-                    </li>
-                    
-                    <li nome = "maysa">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/rezendetoledo/" target="_blank">INSTAGRAM DA MAYSA</a>
-                        </button> 
-                    </li>
-                    
-                    <li nome = "lindelaine">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/brandemburglindelaine/" target="_blank">INSTAGRAM DA LINDELAINE</a>
-                        </button>  
-                    </li>
-                    
-                    <li nome = "esteffany">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/esteffany_costaa/" target="_blank">INSTAGRAM DA ESTEFFANY</a>
-                        </button> 
-                    </li>
-                    
-                    <li nome = "hyzadora">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/hyza_martins/" target="_blank">INSTAGRAM DA HYZADORA</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "robson">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/robson_junior_402_/" target="_blank">INSTAGRAM DO ROBSON</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "wanderson">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/wanderson_lucas.95/" target="_blank">INSTAGRAM DO WANDERSON</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "guilherme aráujo">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/gui_araujosantos/" target="_blank">INSTAGRAM DO GUILHERME ARÁUJO</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "kaio">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/kaiohenriquedasilva/" target="_blank">INSTAGRAM DO KAIO</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "ítalo">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/italocbraganca/" target="_blank">INSTAGRAM DO ÍTALO</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "pedro">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/pedroenrikefritz/" target="_blank">INSTAGRAM DO PEDRO</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "guilherme mendes">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/gui_jidoky/" target="_blank">INSTAGRAM DO GUILHERME MENDES</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "gabriel pinheiro">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/gaba_pinheiro/" target="_blank">INSTAGRAM DO GABRIEL PINHEIRO</a>
-                        </button>
-                    </li>
-                    
-                    <li nome = "juliano">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/julianosoaresdossantos81/" target="_blank">INSTAGRAM DO JULIANO</a>
-                        </button>
+                        <li nome = "combinação">
+                            <button class="acordeon" onclick="OpenCloseCB()">Combinação</button>
+                            <section id="sectionCB" class="OpenClose">
+                                <h3>Introdução:</h3>
+                                <p>Denominam-se combinações simples de n elementos tomados p a p (p ≤ n), aos diferentes subconjuntos que contêm p elementos, sem referência à ordem.</p>
+                                <p>
+                                    A combinação simples é estudada pela análise combinatória, que busca desenvolver técnicas de contagem para <strong>calcular a quantidade </strong><strong>de</strong><strong> agrupamentos não ordenados</strong> que podemos formar escolhendo uma quantidade de elementos de um conjunto.
+                                </p>
 
-                    </li>
+                                <!--Fórmula-->
+                                <div class="formulaESCR">
+                                    <p><span>A fórmula usada em combinação é:</span></p>
+                                    <p>
+                                        <img alt="Fórmula da combinação simples" title="Fórmula da combinação simples" src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/mb/d/analise-combinatoria-combinacao-simples.jpg" id="132356202063013178">
+                                    </p>
+                                    <span>
+                                            <ul id="Ref">
+                                                <li>C = Quantidade de combinações possíveis nessas condições.</li>
+                                                <li>n = Números de elemntos</li>
+                                                <li>p = Números de subconjuntos</li>
+                                                <li>! = Fatorial</li>
+                                            </ul>
+                                    </span>
+                                </div>
+
+                                <h4>Exemplo:</h4>
+                                
+                                <p>
+                                    Uma escola fará um sorteio de três ingressos, um para cada aluno, entre os 10 primeiros colocados na olimpíada de matemática. Após a realização da prova e conhecendo os 10 primeiros colocados, calcule as combinações possíveis para o resultado do sorteio.                            
+                                </p>
+                                
+                                <p>
+                                    Observando o problema nota-se que, no resultado do sorteio, a ordem não é importante, logo, estamos trabalhando com um problema de combinação.
+                                </p>
+                                
+                                <p>
+                                    Calcularemos, então, a combinação de 10 elementos tomados de 3 em 3. Substituindo na fórmula, temos que:
+                                </p>
+
+                                <div class="formulaIMG">
+                                    <p>
+                                        <ol>
+                                            <li><p><strong>C<e>3,10</e> = 10!/ 3!<e>x</e>(10 - 3)!</strong></p></li>
+                                            <li><p><strong>C<e>3,10</e> = 10!/ 3!<e>x</e>7!</strong></p></li>
+                                            <li><p><strong>C<e>3,10</e> = 10.9.8.7.6.5.4.3.2.1 / 3.2.1<e>x</e>7.6.5.4.3.2.1</strong></p></li>
+                                            <li><p><strong>C<e>3,10</e> = 3 628 800 / 6<e>x</e>5 040</strong></p></li>
+                                            <li><p><strong>C<e>3,10</e> = 3 628 800 / 30 240</strong></p></li>
+                                            <li><p><strong>C<e>3,10</e> = 3 628 800 / 30 240 = 120</strong></p></li>
+                                        </ol>
+                                    </p>
+                                    <p>
+                                        <img alt="" height="323" src="https://s2.static.brasilescola.uol.com.br/be/2021/02/correcao-combinacao2.jpg" width="146">
+                                    </p>
+                                </div>
+                            </section>
+                        </li>
                     
-                    <li nome = "wevely">
-                        <button class="btn insta">
-                            <a class="linkBotao" href="https://www.instagram.com/wevelly_souza/" target="_blank">INSTAGRAM DO WEVELLY</a>
-                        </button>
-                    </li>
-                </ul>
-            </section>
+                    </ul>
+                </section>
+            </div>
             
-            <button class="acordeon" onclick="OpenCloseTK()">Clique para mostrar os tiktoks</button>
-            <!--Área do tiktok-->
-            <section id="sectionTK" class="OpenClose">    
-                <p>Para ser redirecionado ao nossos tiktoks só precisa cliclar no meio do botão escrito TIKTOK (E NOME DA PESSOA).</p>
-                
-                <ul id="listaTK">
-                    <li nome = "instagram do dennis">
-                        <button class="btn tiktok">
-                            <a class="linkBotao" href="https://www.tiktok.com/@Dennisrodrigues02" target="_blank">TIKTOK DO DENNIS</a>
-                        </button>
-                    </li>
-                    <li nome = "instagram da joyciele">
-                        <button class="btn tiktok">
-                            <a class="linkBotao" href="https://www.tiktok.com/@joycieleribeiro" target="_blank">TIKTOK DA JOYCIELE</a>
-                        </button>
-                    </li>
-                </ul>
-            </section>
-
-            <!--Área do kwai-->
-            <button class="acordeon" onclick="OpenCloseKW()">Clique para mostrar os kwais</button>
-            <section id="sectionKW" class="OpenClose">  
-                <p>Para ser redirecionado ao nossos kwais só precisa cliclar no meio do botão escrito KWAI (E NOME DA PESSOA).</p>
-                
-
-                <ul id="listaKW">
-                    <li>
-                        <button class="btn kwai">
-                            <a class="linkBotao" href="https://s.kw.ai/u/rhMy1LCC" target="_blank">KWAI DO DENNIS</a>
-                        </button>
-                    </li>
-                </ul>
-            </section>
         </div>
         
         <footer class="ending">
@@ -286,5 +225,6 @@
 
     <script src="sistema_de_busca.js"></script>
     <script src="mobile-navbar.js"></script>
+    <script src="OpenClose.js"></script>
 </body>
 </html>
