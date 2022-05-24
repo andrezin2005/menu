@@ -121,7 +121,9 @@ p {
     /*Margem abaixo*/
     margin-bottom: 2.2rem;
 }
-
+section ul {
+    display: block;
+}
 e {
     font-size: 1.4rem;
 }
