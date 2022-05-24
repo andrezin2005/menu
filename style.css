@@ -6,6 +6,7 @@
 }            
 :root {
     font-size: 62.2%; /*1rem = 10px*/
+    --cor-tema--: #ac0b0b;;
     --cor-primaria--: #23232e;
     --cor-titulo--: hsla(210, 11%, 15%, 1);
     --cor-paragrafo--: black;
@@ -71,7 +72,7 @@ h2 {
 
     justify-content: center;
     /*Cor*/
-    color: black;
+    color: var(--cor-tema--);
     /*Tamanho da fonte*/
     font-size: 3.2rem;
     /*Margem abaixo*/
@@ -120,8 +121,16 @@ p {
     /*Margem abaixo*/
     margin-bottom: 2.2rem;
 }
+
 e {
     font-size: 1.4rem;
+}
+/*Cor de texto*/
+.red {
+ color: red;
+}
+.blue {
+    color: blue;
 }
 /*Cor de fundo*/
 .insta {background: orangered}
@@ -150,7 +159,18 @@ e {
 .formulaIMG {
     display: flex;
 }
-
+/*UL EM COLUNA*/
+.ulColn {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;   
+}
+.ulColn li{
+    font-size: 1.8rem;
+    list-style: none;
+    margin-bottom: 1.4rem;
+}
+/*LI DA SEÇÃO*/
 li section {
     margin-left: auto;
     margin-right: auto;
@@ -171,10 +191,10 @@ header button {
     
 
     /*Margem abaixo*/
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     
     /*Tamanho da fonte*/
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     /*Cor*/
     color: white;
@@ -439,9 +459,10 @@ header .menu-expanded .logo {
         visibility: hidden;
     }
     /*Menu ativo*/
-    .navigation,
+    
     body.menu-expanded .menu,
     body.menu-expanded button.close-menu {
+        
         display: flex;
         opacity: 1;
         visibility: visible;
@@ -487,8 +508,8 @@ header .menu-expanded .logo {
         transform: translateY(100%);
     }
     body.menu-expanded nav div.menu {
-        transition: transform 450ms;
-        transform: translateY(0%);    
+        transform: translateY(0);  
+        transition: 0.8s; 
     }
     
 
