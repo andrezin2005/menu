@@ -20,4 +20,11 @@ function OpenCloseQM() {
     this.sectionKW.classList.toggle("OpenClose")
 }
 
-
+//Matéria de Espanhol==============================================================================
+function OpenCloseTCL() {
+    this.sectionTCL.classList.toggle("OpenClose")
+}
+//Matéria de Física================================================================================
+function OpenCloseELT() {
+    this.sectionELT.classList.toggle("OpenClose")
+}
