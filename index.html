@@ -31,11 +31,11 @@
         
         <div class="menu">
             <ul id="menu">
-                <li><a href="/">Início</a></li>
                 <li><a href="#LP" onclick="closeMenu()">Português</a></li>
                 <li><a href="#MT" onclick="closeMenu()">Matemática</a></li>
                 <li><a href="#QM" onclick="closeMenu()">Química</a></li>
-                <li><a href="https://wa.me/" target="_blank" onclick="closeMenu()">Contato</a></li>
+                <li><a href="#EP" onclick="closeMenu()">Espanhol</a></li>
+                <li><a href="#FS" onclick="closeMenu()">Física</a></li>
             </ul>
         </div>
         
@@ -46,6 +46,7 @@
         <h3>BOAS-VINDAS AO MEUS ESTUDOS 👋</h3> <br>
         <h1>Olá, meu nome é André, e com este site irei resgistrar (da minha maneira) as matérias da escola.</h1> <br>
 
+        
         <div class="estrutura">
             <!--Matérias-->
             <div class="materias">
@@ -53,8 +54,9 @@
                 
                 <!--Área das matérias-->
                 <section id="sectionMT" class="">
+                    <h3>Clique no botão pra abrir a matéria.</h3>
                     <div class="search-box">
-                        <input id="Search" class="search-txt" type="text" name="entrada" search="listaMT" onkeypress="lower()" placeholder="Escreva uma matéria de matemática" onkeypress="lower()">
+                        <input id="SearchMT" class="search-txt" type="text" name="entrada" search="listaMT" placeholder="Escreva uma matéria de matemática">
                                 
                         <a class="search-btn">
                             <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
@@ -62,11 +64,12 @@
                         </a>
                     </div>
                     <i class="fas fa-search"></i> <br>
-                    <h2>Clique no botão pra abrir a matéria.</h2>
+                    
                     <ul id="listaMT">     
                         <li nome = "arranjo">
                             <button class="acordeon" onclick="OpenCloseAJ()">Arranjo</button>
                             <section id="sectionAJ" class="OpenClose">
+                            
                                 <h3>Introdução:</h3>
                                 <p>
                                     Chama-se <strong>arranjo simples</strong>, pois são agrupamentos formados com <em>p</em> elementos de um conjunto de <em>n</em> elementos.</span>
@@ -88,10 +91,10 @@
                                     </p>
                                     <span>
                                             <ul id="Ref">
-                                                <li>A = Quantidade de combinações possíveis nessas condições.</li>
-                                                <li>n = Números de elemntos</li>
-                                                <li>p = Números de subconjuntos</li>
-                                                <li>! = Fatorial</li>
+                                                <li>A = Quantidade de combinações possíveis nessas condições;</li>
+                                                <li>n = Números de elemntos;</li>
+                                                <li>p = Números de subconjuntos;</li>
+                                                <li>! = Fatorial.</li>
                                             </ul>
                                     </span>
                                 </div>
@@ -129,10 +132,10 @@
                                     </p>
                                     <span>
                                             <ul id="Ref">
-                                                <li>C = Quantidade de combinações possíveis nessas condições.</li>
-                                                <li>n = Números de elemntos</li>
-                                                <li>p = Números de subconjuntos</li>
-                                                <li>! = Fatorial</li>
+                                                <li>C = Quantidade de combinações possíveis nessas condições;</li>
+                                                <li>n = Números de elementos;</li>
+                                                <li>p = Números de subconjuntos;</li>
+                                                <li>! = Fatorial.</li>
                                             </ul>
                                     </span>
                                 </div>
@@ -173,6 +176,180 @@
                 </section>
             </div>
             
+            </div>
+            <div class="materias">
+                <h2 id="EP">Espanhol</h2>
+                
+                <section id="sectionEP" class="">
+                    <h3>Clique no botão pra abrir a matéria.</h3>
+                    <div class="search-box">
+                        <input id="SearchEP" class="search-txt" type="text" name="entrada" search="listaEP"  placeholder="Escreva uma matéria de matemática">
+                                
+                        <a class="search-btn">
+                            <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
+                            <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                    <i class="fas fa-search"></i> <br>
+                    
+                    <ul id="listaEP">
+                        <li nome = técnicas de leitura>
+                            <button class="acordeon" onclick="OpenCloseTCL()">Técnicas de leitura</button>
+                            <section id="sectionTCL" class="OpenClose">
+                                <ul class="ulColn">
+                                    <li>
+                                        <strong>Leia o título e o subtítulo</strong> (caso haja): faça uma leitura atenta de ambas as informações pois isso pode ajudar você a ter uma noção de contexto em relação ao tema que será apresentado.
+                                    </li>
+                                    <li>
+                                        <strong>Verifique a fonte do texto</strong>: através dessa informação você pode conseguir identificar o tipo de texto da questão. Em provas anteriores, foram utilizados poemas, artigos de revista/jornal, anúncios, cartuns, etc.
+                                    </li>
+                                    <li>
+                                        <strong>Observe a imagem com atenção </strong>(caso haja): fique atento a todos os elementos da imagem: objetos, plano de fundo e expressões faciais, por exemplo. Quem sabe não está aí a resposta que você procura.
+                                    </li>
+                                    <li>
+                                        <strong>Confira a pergunta e as alternativas de resposta</strong>: a primeira coisa que você deve fazer, antes mesmo de começar a ler o texto, é ler o enunciado da questão e compreender as alternativas de resposta. A resolução do exercício será facilitada dessa forma, pois você já terá uma ideia do tipo de informação que deve procurar no texto.
+                                    </li>
+                                </ul>
+                            </section>    
+                        </li>
+                        
+                    </ul> 
+                </section>
+            </div>
+            
+            <div class="materias">
+                <!--tema-->
+                <h2 id="PT">Português</h2>
+                <!--seção da matéria-->
+                <section id="sectionPT" class="OpenCloseFK">
+                    <!--<h3>Clique no botão pra abrir a matéria.</h3>
+                    Barra de pesquisa-->
+                    <!--<div class="search-box">
+                        <input id="SearchPT" class="search-txt" type="text" name="entrada" search="listaPT" placeholder="Escreva uma matéria de matemática">
+                                
+                        <a class="search-btn">
+                            <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
+                            <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                    <i class="fas fa-search"></i> <br>-->
+                    <!--Lista para por na barra de pesquisa-->
+                    <ul id="listaPT">
+                        <!--lista de matérias-->
+                        <!--<li nome = >
+                            Botão pra abir a matéria
+                            <button class="acordeon" onclick="OpenCloseTCL()"></button>
+                            <section id="sectionTCL" class="">
+                                <--conteúdo
+                            </section>    
+                        </li>-->
+                    </ul> 
+                </section>
+            </div>
+            
+            <div class="materias">
+                <!--tema-->
+                <h2 id="QM">Química</h2>
+                <!--seção da matéria-->
+                <section id="sectionQM" class="OpenCloseFK">
+                    <!--<h3>Clique no botão pra abrir a matéria.</h3>
+                    Barra de pesquisa-->
+                    <!--<div class="search-box">
+                        <input id="SearchQM" class="search-txt" type="text" name="entrada" search="listaQM"  placeholder="Escreva uma matéria de matemática">
+                                
+                        <a class="search-btn">
+                            <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
+                            <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                    <i class="fas fa-search"></i> <br>-->
+                    <!--Lista para por na barra de pesquisa-->
+                    <ul id="listaQM">
+                        <!--lista de matérias-->
+                        <!--<li nome = "materia">
+                            Botão pra abir a matéria
+                            <--<button class="acordeon" onclick="OpenCloseTCL()"></button>
+                            <section id="sectionTCL" class="">
+                                conteúdo
+                            </section>    
+                        </li>-->
+                    </ul> 
+                </section>
+            </div>
+            <div class="materias">
+                <!--tema-->
+                <h2 id="FS">Física</h2>
+                <!--seção da matéria-->
+                <section id="sectionFS" class="">
+                    <h3>Clique no botão pra abrir a matéria.</h3>
+                    <!--Barra de pesquisa-->
+                    <div class="search-box">
+                        <input id="SearchFS" class="search-txt" type="text" name="entrada" search="listaFS" placeholder="Escreva uma matéria de matemática">
+                                
+                        <a class="search-btn">
+                            <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
+                            <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                    <i class="fas fa-search"></i> <br>
+                    <!--Lista para por na barra de pesquisa-->
+                    <ul id="listaFS">
+                        <!--lista de matérias-->
+                        <li nome = "eletrostática">
+                            <button class="acordeon" onclick="OpenCloseELT()">Eletrostática</button>
+                            <section id="sectionELT" class="OpenClose">
+                                <h3>Introdução:</h3>
+                                <p><strong>O que é carga elétrica?</strong></p>
+                                <p>É uma propriedade da partículas elementares que compõem o átomo, sendo que a carga do próton é <strong><em>positiva</em></strong> e do elétron é <strong><em>negativa</em></strong>.</p>
+                                <p><strong class="red">Próton:</strong> localiza-se no núcleo do átomo e possui cargas positivas.</p>
+                                <p><strong class="red">Elétron:</strong> ficam na eletosfera, região ao redor do núcleo e possui carga negativa.</p>
+                                <p><strong class="red">Neutrôn:</strong> também ficam no núcleo do átomo e possui cargas <em>"neutras"</em>, pois tem amesma quantidade de cargas positivas e negativas.</p>
+                                
+                                <h3>Estrutura atômica:</h3>
+                                <p><img alt="O átomo é formado por prótons, nêutrons e elétrons" height="379" src="https://s5.static.brasilescola.uol.com.br/img/2015/11/atomo(1).jpg" title="Átomos" width="400"></p>
+                                <p>A unidade de grandeza da carga elétrica no Sistema Internacional de Unidades é o Coulomb, representado pela letra C, em homenagem a Charles Augustin Coulomb.</p>
+                                <p>Todos os corpos são formados por cargas elétricas, porém, não é fácil perceber suas propriedades, pois a maioria dos corpos, quando estão eletricamente neutros, possui mesma quantidade de prótons e elétrons.</p>
+                                <p>Um corpo pode ser eletrizado de duas formas:</p>
+                                <p><strong class="blue">Positivamente:</strong> quando há a falta de eletrons, possuindo assim mais prótons que eletrons.</p>
+                                <p><strong class="blue">Negativamente:</strong> quando há a excesso de eletrons, possuindo assim mais eletrons que prótons.</p>
+                                
+                                <h3>Fórmula:</h3>
+                                <p>Q = n <e>x</e> e</p>
+                                <span>
+                                    <ul id="Ref">
+                                        <li>Q = a carga elétrica total de um corpo;</li>
+                                        <li>n = o número de elétrons perdidos ou recebidos;</li>
+                                        <li>e = a carga elementar (1,6 . 10<sup>-19</sup> C).</li>
+                                    </ul>
+                            </span>
+                                <p></p>
+                                <h3>Carga elementar:</h3>
+                                <p>
+                                    A carga elétrica elementar é a menor quantidade de carga que pode ser encontrada na natureza. Seu valor é igual a 1,6 . 10-19 C e é atribuído à carga do elétron (com sinal negativo) e à do próton (com sinal positivo).
+                                    A partir desse valor, podemos perceber que 1 C é uma unidade muito grande para a carga elétrica, por isso, é comum a utilização de seus submúltiplos.
+                                </p>
+                                
+                                <h3>Eletrização:</h3>
+                                <p>Para que um corpo, inicialmente neutro, fique eletricamente carregado, ele precisa passar por um processo de eletrização, que pode ocorrer de três formas:</p>
+                                <p><strong class="red">Eletrização por atrito:</strong> quando dois corpos neutros e feitos de diferentes materiais são atritados entre si, um deles ganha elétrons (adquire carga negativa) e o outro perde elétrons (adquire carga positiva). Nesse tipo de eletrização, os dois corpos ficam com carga de módulo igual, mas de sinais opostos.</p>
+                                <p><strong class="red">Eletrização por contato:</strong> ocorre quando dois corpos condutores, estando um deles eletrizado, são colocados em contato e a carga elétrica é redistribuída entre os dois, estabelecendo equilíbrio eletrostático. Ao fim desse processo, os dois corpos ficam com a mesma carga.</p>
+                                <p><strong class="red">Eletrização por indução:</strong> esse processo de eletrização ocorre em três etapas:</p>
+                                <ul>
+                                    <li>
+                                    <p><strong class="blue">Inicialmente</strong> se aproxima um corpo eletrizado de um corpo neutro, fazendo com que neste haja a separação de cargas;</p>
+                                    </li>
+                                    <li>
+                                    <p><strong class="blue">Em seguida</strong>, conecta-se um condutor ao corpo neutro, ligando-o a terra, fazendo com que uma parte do condutor seja neutralizada;</p>
+                                    </li>
+                                    <li>
+                                    <p><strong class="blue">Por fim</strong>, desconecta-se o corpo da terra e ele fica eletrizado com mesma carga, porém com sinal oposto às cargas do corpo usado para induzir a separação de cargas.</p>
+                                    </li>
+                                </ul>
+                            </section>    
+                        </li>
+                    </ul> 
+                </section>
+            </div>
         </div>
         
         <footer class="ending">
