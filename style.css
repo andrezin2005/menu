@@ -105,6 +105,19 @@ h4 {
     /*Margem abaixo*/
     margin-bottom: 1.6rem;
 }
+/*Titulo 5*/ 
+h5 {
+    /*Margem esquerda*/
+    margin-left: 1rem;
+    /*Margem direita*/
+    margin-right: 1rem;
+    /*Cor*/
+    color: black;
+    /*Tamanho da fonte*/
+    font-size: 1.8rem;
+    /*Margem abaixo*/
+    margin-bottom: 1.6rem;
+}
 /*Parágrafo*/ 
 p {
     /*Margem esquerda*/
@@ -151,6 +164,27 @@ e {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+/*Estilos de redação*/
+.subButton {
+    text-transform: uppercase;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+    padding: 20px;
+    width: 76%;
+    border: none;
+    text-align: center;
+    outline: none;
+    transition: 0.8s;
+}
+button.subButton:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(172, 172, 172);
+    transition: 0.5s;
+}
+
 /*Estilos das fórmulas*/
 #formula {
     font-size: 2.3rem;
@@ -158,9 +192,7 @@ e {
 .formulaESCR {
     display: block;
 }
-.formulaIMG {
-    display: flex;
-}
+
 /*UL EM COLUNA*/
 .ulColn {
     display: block;
@@ -287,6 +319,9 @@ header .menu-expanded .logo {
 }
 
 @media (min-width: 818px) {
+    .formulaIMG {
+        display: flex;
+    }
     /*Barra de pesquisa*/
     .search-box {
         transition: 0.8s;
@@ -436,6 +471,9 @@ header .menu-expanded .logo {
 
 /*Quando o menu ta fechado*/
 @media (max-width: 818px) {
+    .formulaIMG {
+        display: block;
+    }
     nav svg {
         display: block;
     }
