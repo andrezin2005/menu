@@ -85,9 +85,9 @@
                                     </p>
 
                                     <!--Fórmula-->
-                                    <div class="formulaESCR">
+                                    <div class="formulaIMG">
                                         <p><span>A fórmula usada em arranjo simples é:</span></p>
-                                        <p>
+                                        <p >
                                             <img alt="Fórmula do arranjo simples" title="Fórmula do arranjo simples" src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/mb/d/analise-combinatoria-arranjos-simples.jpg" id="132356202063013207">
                                         </p>
                                         <span>
@@ -126,7 +126,7 @@
                                     </p>
 
                                     <!--Fórmula-->
-                                    <div class="formulaESCR">
+                                    <div class="formulaIMG">
                                         <p><span>A fórmula usada em combinação é:</span></p>
                                         <p>
                                             <img alt="Fórmula da combinação simples" title="Fórmula da combinação simples" src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/mb/d/analise-combinatoria-combinacao-simples.jpg" id="132356202063013178">
@@ -172,12 +172,43 @@
                                     </div>
                                 </section>
                             </li>
-                        
+                            
+                            <li nome = "Pa progressão aritimética">
+                                <button class="acordeon" onclick="OpenClosePA()">Progressão Aritimética</button>
+                                <section id="sectionPA" class="OpenClose">
+                                    <h3>Introdução:</h3>
+                                    
+                                    <p>A <strong>Progressão Aritmética (P.A.)</strong> é uma sequência de números onde a diferença entre dois termos consecutivos é sempre a mesma. Essa diferença constante é chamada de razão da P.A..</p><p>Sendo assim, a partir do segundo elemento da sequência, os números que surgem são resultantes da soma da constante com o valor do elemento anterior.</p><p>Isso é o que a diferencia da progressão geométrica (P.G.), pois nesta, os números são multiplicados pela razão, enquanto na progressão aritmética, eles são somados.</p><p>As progressões aritméticas podem apresentar um número determinado de termos (P.A. finita) ou um número infinito de termos (P.A. infinita).</p><p>Para indicar que uma sequência continua indefinidamente utilizamos reticências, por exemplo:</p><ul class="ulColn"><li>A sequência (4, 7, 10, 13, 16, ...) é uma P.A. infinita.</li><li>A sequência (70, 60, 50, 40, 30, 20, 10) é uma P.A. finita.</li></ul>
+                                    <p>Cada termo de uma P.A. é identificado pela posição que ocupa na sequência e para representar cada termo utilizamos uma letra (normalmente a letra <strong>a</strong>) seguida de um número que indica sua posição na sequência.</p>
+                                    <p>Por exemplo, o termo <strong>a<sub>4</sub></strong> na P.A (2, 4, 6, 8, 10) é o número 8, pois é o número que ocupa a 4ª posição na sequência.</p>
+                                    
+                                    <h3>Classificação de uma P.A.</h3>
+                                    <p>De acordo com o valor da razão, as progressões aritméticas são classificadas em:</p>
+                                    
+                                    
+                                    <p><strong>Constante</strong>: quando a razão for igual a zero. Por exemplo: (4, 4, 4, 4, 4...), sendo r = 0. <br>
+                                        <strong>Crescente</strong>: quando a razão for maior que zero. Por exemplo: (2, 4, 6, 8,10...), sendo r = 2. <br>
+                                        <strong>Decrescente</strong>: quando a razão for menor que zero (15, 10, 5, 0, - 5,...), sendo r = - 5 <br>
+                                    </p>
+                                        
+                                                
+                                    </aside><h3>Fórmula do Termo Geral</h3>
+                                    <p><img alt="começar estilo tamanho matemático 26px a com n subscrito igual a a com 1 subscrito mais parêntese esquerdo n menos 1 parêntese direito. r fim do estilo" class="Wirisformula image-s" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathsize=¨26px¨»«mrow»«msub»«mi mathcolor=¨#00007F¨»a«/mi»«mi mathcolor=¨#00007F¨»n«/mi»«/msub»«mo mathcolor=¨#00007F¨»=«/mo»«msub»«mi mathcolor=¨#00007F¨»a«/mi»«mn mathcolor=¨#00007F¨»1«/mn»«/msub»«mo mathcolor=¨#00007F¨»+«/mo»«mo mathcolor=¨#00007F¨»(«/mo»«mi mathcolor=¨#00007F¨»n«/mi»«mo mathcolor=¨#00007F¨»-«/mo»«mn mathcolor=¨#00007F¨»1«/mn»«mo mathcolor=¨#00007F¨»)«/mo»«mo mathcolor=¨#00007F¨».«/mo»«mi mathcolor=¨#00007F¨»r«/mi»«/mrow»«/mstyle»«/math»" height="30" role="math" src="data:image/png;base64,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" width="214"></p></p>
+                                    
+                                    <div class="formulaIMG">
+                                        <p>Onde: <br>
+                                        a<e>n</e>: termo que queremos calcular<br>
+                                        a<e>1</e>: primeiro termo da P.A.<br>
+                                        n: posição do termo que queremos descobrir<br>
+                                        r: razão</p>
+                                    </div>
+
+                                </section>
+                            </li>
                         </ul>
                     </section>
                 </li>
                 
-
                 <li nome="espanhol">
                     <h2 id="EP">Espanhol</h2>
                     
@@ -215,27 +246,129 @@
                     <h2 id="PT">Português</h2>
                     <!--seção da matéria-->
                     <section id="sectionPT" class="OpenCloseFK">
-                        <!--<h3>Clique no botão pra abrir a matéria.</h3>
-                        Barra de pesquisa-->
-                        <!--<div class="search-box">
-                            <input id="SearchPT" class="search-txt" type="text" name="entrada" search="listaPT" placeholder="Escreva uma matéria de matemática">
-                                    
-                            <a class="search-btn">
-                                <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
-                                <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
-                            </a>
-                        </div>
-                        <i class="fas fa-search"></i> <br>-->
-                        <!--Lista para por na barra de pesquisa-->
+                        <h3>Clique no botão pra abrir a matéria.</h3>
+
+                        
                         <ul id="listaPT">
                             <!--lista de matérias-->
-                            <!--<li nome = >
-                                Botão pra abir a matéria
-                                <button class="acordeon" onclick="OpenCloseTCL()"></button>
-                                <section id="sectionTCL" class="">
-                                    <--conteúdo
-                                </section>    
-                            </li>-->
+                            <li nome = "redação">
+                                <!--redação-->
+                                <button class="acordeon" onclick="OpenCloseRD()">Redação</button>
+                                <section id="sectionRD" class="OpenClose">
+                                    <!--Introdução-->
+                                    <button class="subButton" onclick="OpenCloseIT()">Introdução</button>
+                                    <section id="sectionIT" class="OpenClose">
+                                        <h3>Introdução:</h3>
+                                        <p>Uma <strong>boa introdução</strong> conversa diretamente com o título e o desenvolvimento do seu texto <br>
+
+                                        Ela requer dinamismo e fluidez da explicação, além da organização das ideias de forma simplificada. <br>  
+                                            
+                                        Ainda que objetiva, a introdução precisa ser <strong>chamativa</strong>. <br> <br>
+                                        </p>
+
+                                        <h4>Maneira de fazer uma introdução:</h4>
+                                        <p>
+                                        <strong>· Apesente o tema</strong> <br>
+                                        <strong>· Contextualize o tema</strong> <br>
+                                        <strong>· Aponte a tese</strong> <br> <br>
+                                        Além disso, uma técnica muito eficiente é usar alguma frase padrão para iniciar o texto. 
+
+                                            Confira as opções: <br>
+                                            
+                                            <strong>·</strong> “Muito se tem discutido, recentemente, acerca de …”<br>
+                                            <strong>·</strong> “Muito se discute a importância de …”<br>
+                                            <strong>·</strong> “Pode-se afirmar que, em razão de …”<br>
+                                            <strong>·</strong> “Observando o cenário…”<br>
+                                            <strong>·</strong> “É de conhecimento geral que…”<br>
+                                            <strong>·</strong> “Em face do cenário atual…”<br>
+                                            <strong>·</strong> “Segundo a pesquisa…”<br>
+                                            <strong>·</strong> “Tendo em vista que…”.<br>
+                                        </p>
+
+                                        <h5>É importante relembrar que:</h5>
+                                        <p>É bom sua introdução deve possuir 2 argumentos. Um para cada parágrafo de desenvolvimento.</p>
+
+                                        <p><strong>Exemplo:</strong> No que se refere ao <span class="red">(tema)</span> pode-se afirmar que, <span class="red">(contextualize)</span>, e isto não só <span class="red">(argumento 1)</span> como também <span class="red">(argumento 2)</span>.</p> <br>
+                                    </section>
+
+                                    <!--Desenvolvimento-->
+                                    <button class="subButton" onclick="OpenCloseDS()">Desenvolvimento</button>
+                                    <section id="sectionDS" class="OpenClose">
+                                        <h3>Desenvolvimento:</h3>
+                                        <p>Nessa parte do texto, o autor deve <strong>criar os argumentos</strong> necessários para sustentar, defender e convencer o leitor a respeito da tese proposta na <strong>introdução</strong>, de maneira coesa e coerente.</p>
+                                        
+                                        <h4>Tipos de desenvolvimento:</h4>
+                                        <p>
+                                            1. <strong>Argumento de autoridade:</strong> se dá pela citação de autores e autoridades numa área de saber. Argumentos feitos por meio de citações devem estar bem elaborados e ter ligação com o tema, caso contrário, o texto ficará descosturado; <br><br>   
+
+                                            2. <strong>Argumento baseado no consenso:</strong> se dá pelo uso de proposições aceitas como verdadeiras. É preciso não confundir com lugar-comum, de validade discutível e, às vezes, preconceituosa; <br><br>
+                                            
+                                            3. <strong>Argumento baseado em provas concretas (fatos):</strong> podem ser estatísticos, dados históricos, exemplos e têm de gerar conclusão adequada, compatível com os dados apresentados; <br><br>
+                                            
+                                            4. <strong>Argumento baseado em raciocínio lógico:</strong>  baseia-se na relação lógica entre as proposições, por exemplo, relação de causa e consequência. É preciso cuidado para evitar problemas de tautologia e inversão; <br><br>
+
+                                            5. <strong>Argumento baseado na competência linguística:</strong> caracteriza-se pelo uso da variante culta da língua ou um vocabulário adequado à situação de interlocução. <br><br>
+                                        </p>
+
+                                        <h4>Maneira de fazer um desenvolvimento:</h4>
+                                        <p>
+                                            <strong>Argumento por Exemplificação:</strong> uma das maneiras mais simples de fundamentar sua opinião. Esse é um recurso argumentativo que pode ser utilizado com o intuito de deixar o ponto de vista mais compreensível. Geralmente, costuma-se utilizar alguns termos como: para contextualizar, por exemplo, a título de exemplificação, como acontece no caso, etc. <br><br>
+
+                                            <strong>Argumento por Comparação ou Analogia:</strong> Como o próprio nome sugere, são feitas analogias com obras literárias, filmes, novelas, séries de TV, etc. Ao escolher essa estratégia, o autor do texto revela uma semelhança ou diferença do assunto abordado com outra situação existente. <br><br>
+
+                                            <strong>Argumento por alusão histórica:</strong> apesar de muito parecido com o recurso anterior, essa estratégia diz respeito a uma comparação específica do argumento com um fato histórico. A intertextualidade é a palavra-chave desse tipo de argumento, em que o autor da redação deverá tecer uma opinião crítica em relação ao recorte histórico escolhido. <br><br>
+
+                                            <strong>Argumento por evidência (ou por comprovação):</strong> o uso de dados estatísticos ou informações de domínio público divulgadas em pesquisas de órgãos importantes, são excelentes alternativas para respaldar o seu ponto de vista na redação. Contudo, vale ressaltar que, ao optar por este tipo de argumento, a fonte das informações utilizadas no texto deve ser citada. <br><br>
+
+                                            <strong>Argumento de autoridades:</strong> esse opção de argumento está relacionada a citação direta e indireta de fontes consideradas confiáveis sobre o assunto, como um especialista renomado.  <br><br>
+
+                                            <strong>Enumeração:</strong> refere-se à listagem de fatos que ratificam a sua tese. Termos como primeiramente, outro fator importante, além disso, ademais, etc, costumam ser utilizados nesse contexto. <br>
+                                        </p>
+                                        
+                                        <h5>Ademais, pode-se utilizar também:</h5>
+                                        <p>
+                                            A diversificação no uso dos conectivos e na variabilidade dos sinônimos. <br>
+                                            Fazendo isso, esses recursos coesivos poderão ajudar até mesmo em sua estratégia de argumentação, pois eles têm objetivos específicos, como apresentar dois lados diferentes de uma mesma coisa ("Por um lado" em um parágrafo, "Por outro lado" no seguinte), contrapor ideias ("Apesar de", "Embora", "Não obstante"), concluir ("Portanto", "Logo", "Assim") e afins.  <br><br>
+                                            E nas redações nota mil, existem de 3 a 4 conectivos por parágrafo, empregados no início deles ou no início de cada sentença.  <br><br>
+                                        </p>
+                                    </section>
+
+                                    <!--Conclusão-->
+                                    <button class="subButton" onclick="OpenCloseCL()">Conclusão</button>
+                                    <section id="sectionCL" class="OpenClose">
+                                        <h3>Conclusão:</h3>
+                                        
+                                        <h4>Itens necessários em uma conclusão:</h4>
+                                        <p>
+                                        <strong>·</strong> Explicação e Ação (O que é necessário para resolver o problema?); <br>
+                                        <strong>·</strong> Agente social (Quem deve resolver o problema?); <br>
+                                        <strong>·</strong> Meio ou modo (Como o problema deve ser resolvido?); <br>
+                                        <strong>·</strong> Finalidade (O que será conquistado com o fim do problema?). <br>
+                                        </p>
+
+                                        <h4>Dicas para fazer uma boa conclusão:</h4>
+                                        <h5>1. Seja breve e não fique “enchendo linguiça”</h5>
+                                        <p>Uma conclusão não deve ser muito longa. Isso porque a parte de argumentar e apresentar dados já passou. Foque nas sugestões que serão oferecidas ao leitor, sendo claro e objetivo. Numa redação, geralmente a conclusão é feita em 5 linhas, ou seja, em um parágrafo.</p>
+
+                                        <h5>2. Ressalte a ideia principal do texto, retomando a introdução</h5>
+                                        <p>Na introdução, tudo o que será abordado deve ser apresentado ao leitor. Tão importante quanto a conclusão, a introdução do texto mostra ao leitor o que ele vai encontrar ali. Portanto, as palavras-chave devem estar presentes e serem retomadas na conclusão. A ideia é responder ao questionamento feito na introdução.</p>
+
+                                        <h5>3. Resuma tudo o que foi dito</h5>
+                                        <p>Organizar as ideias no final do texto para resumi-las é algo muito importante. Claro que você não deverá repetir nada, somente fazer a arremate final. Pense, portanto, de que maneira, a partir do seu ponto de vista, você solucionaria os problemas que apresentou?</p>
+
+                                        <h5>4. Apresente soluções para o que foi abordado</h5>
+                                        <p>Uma boa conclusão deve ter uma proposta de valor, ou seja, ela deve conter soluções e apresentar melhorias para o tema abordado. Ofereça ao leitor oportunidades de refletir sobre o tema.</p>
+                                        
+                                        <h5>Também é suma importância que:</h5>
+                                        <p>
+                                            Explique e especifique mais os elementos que já foram trazidos ao decorrer da redação.
+                                            Traga, por exemplo, novos efeitos possíveis ou meios pelos quais a ação pode ser colocada em prática. <br>
+                                            <strong>Os detalhes são muito importantes.</strong> <br>
+                                        </p>
+
+                                    </section>
+                                </section>
+                            </li>
                         </ul> 
                     </section>
                 </li>
@@ -274,7 +407,7 @@
                     <!--tema-->
                     <h2 id="FS">Física</h2>
                     <!--seção da matéria-->
-                    <section id="sectionF" class="">
+                    <section id="sectionFS" class="">
                         <h3>Clique no botão pra abrir a matéria.</h3>
                         <!--Lista para por na barra de pesquisa-->
                         <ul id="listaFS">
@@ -334,7 +467,6 @@
                         </ul> 
                     </section>
                 </li>
-            </ul>
         </div>
         
         <footer class="ending">
