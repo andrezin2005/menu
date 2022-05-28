@@ -59,3 +59,14 @@ function OpenCloseTCL() {
 function OpenCloseELT() {
     this.sectionELT.classList.toggle("OpenClose")
 }
+
+
+
+//bloquear o botão direito do mouse
+function block() {
+    //document.getElementById("final").oncontextmenu = function() =
+    document.oncontextmenu = function() {
+      return false;
+    }
+  }
+block().init()
