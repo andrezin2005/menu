@@ -19,7 +19,7 @@ function busca(input_field,div){
         }
     }
 }
-function busca(input_field,div){
+function buscaMT(input_field,div){
     input_field.onkeyup=function(e){
         for(di of div.children){
             input = document.getElementById("SearchMT");
@@ -32,7 +32,7 @@ function busca(input_field,div){
         }
     }
 }
-function busca(input_field,div){
+function buscaEPL(input_field,div){
     input_field.onkeyup=function(e){
         for(di of div.children){
             input = document.getElementById("SearchEPL");
@@ -45,7 +45,7 @@ function busca(input_field,div){
         }
     }
 }
-function busca(input_field,div){
+function buscaFS(input_field,div){
     input_field.onkeyup=function(e){
         for(di of div.children){
             input = document.getElementById("SearchFS");
@@ -58,7 +58,7 @@ function busca(input_field,div){
         }
     }
 }
-function busca(input_field,div){
+function buscaQM(input_field,div){
     input_field.onkeyup=function(e){
         for(di of div.children){
             input = document.getElementById("SearchQM");
@@ -71,7 +71,7 @@ function busca(input_field,div){
         }
     }
 }
-function busca(input_field,div){
+function buscaPT(input_field,div){
     input_field.onkeyup=function(e){
         for(di of div.children){
             input = document.getElementById("SearchPT");
