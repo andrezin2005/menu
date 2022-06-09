@@ -16,15 +16,11 @@
 
         <div class="botao">
             <button onclick="openMenu()" class="open-menu">
-                    <svg width="34" height="30" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 9H21M1 1H21M9 17L21 17" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                    
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/></svg>                   
                         
             </button>
             <button onclick="closeMenu()" class="close-menu">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5 15.538l-3.592-3.548 3.546-3.587-1.416-1.403-3.545 3.589-3.588-3.543-1.405 1.405 3.593 3.552-3.547 3.592 1.405 1.405 3.555-3.596 3.591 3.55 1.403-1.416z"/></svg>
                     
             </button>
         </div>
@@ -58,15 +54,12 @@
                     
                     <!--Área das matérias-->
                     <section id="sectionMT" class="">
-                        <div class="search-box">
-                            <input id="SearchMT" class="search-txt" type="" name="entrada" search="listaMT" placeholder="Pesquise a matéria designada"></div>
-                        <i class="fas fa-search"></i> <br>
                         <h3>Clique no botão pra abrir a matéria.</h3>
                         
                         <ul id="listaMT">
                             <li nome = "arranjo">
                                 <button class="acordeon" onclick="OpenCloseAJ()">Arranjo</button>
-                                <section id="sectionAJ" class="OpenClose">
+                                <section id="sectionAJ" class="OpenClose corFundo">
                                 
                                     <h3>Introdução:</h3>
                                     <p>
@@ -115,7 +108,7 @@
                             
                             <li nome = "combinação">
                                 <button class="acordeon" onclick="OpenCloseCB()">Combinação</button>
-                                <section id="sectionCB" class="OpenClose">
+                                <section id="sectionCB" class="OpenClose corFundo">
                                     <h3>Introdução:</h3>
                                     <p>Denominam-se combinações simples de n elementos tomados p a p (p ≤ n), aos diferentes subconjuntos que contêm p elementos, sem referência à ordem.</p>
                                     <p>
@@ -154,14 +147,14 @@
 
                                     <div class="formulaIMG">
                                         <p>
-                                            <ol>
+                                            <ul>
                                                 <li><p><strong>C<e>3,10</e> = 10!/ 3!<e>x</e>(10 - 3)!</strong></p></li>
                                                 <li><p><strong>C<e>3,10</e> = 10!/ 3!<e>x</e>7!</strong></p></li>
                                                 <li><p><strong>C<e>3,10</e> = 10.9.8.7.6.5.4.3.2.1 / 3.2.1<e>x</e>7.6.5.4.3.2.1</strong></p></li>
                                                 <li><p><strong>C<e>3,10</e> = 3 628 800 / 6<e>x</e>5 040</strong></p></li>
                                                 <li><p><strong>C<e>3,10</e> = 3 628 800 / 30 240</strong></p></li>
                                                 <li><p><strong>C<e>3,10</e> = 3 628 800 / 30 240 = 120</strong></p></li>
-                                            </ol>
+                                            </ul>
                                         </p>
                                         <p>
                                             <img alt="" height="323" src="https://s2.static.brasilescola.uol.com.br/be/2021/02/correcao-combinacao2.jpg" width="146">
@@ -172,7 +165,7 @@
                             
                             <li nome = "Pa progressão aritimética">
                                 <button class="acordeon" onclick="OpenClosePA()">Progressão Aritimética</button>
-                                <section id="sectionPA" class="OpenClose">
+                                <section id="sectionPA" class="OpenClose corFundo">
                                     <h3>Introdução:</h3>
                                     
                                     <p>A <strong>Progressão Aritmética (P.A.)</strong> é uma sequência de números onde a diferença entre dois termos consecutivos é sempre a mesma. Essa diferença constante é chamada de razão da P.A..</p><p>Sendo assim, a partir do segundo elemento da sequência, os números que surgem são resultantes da soma da constante com o valor do elemento anterior.</p><p>Isso é o que a diferencia da progressão geométrica (P.G.), pois nesta, os números são multiplicados pela razão, enquanto na progressão aritmética, eles são somados.</p><p>As progressões aritméticas podem apresentar um número determinado de termos (P.A. finita) ou um número infinito de termos (P.A. infinita).</p><p>Para indicar que uma sequência continua indefinidamente utilizamos reticências, por exemplo:</p><ul class="ulColn"><li>A sequência (4, 7, 10, 13, 16, ...) é uma P.A. infinita.</li><li>A sequência (70, 60, 50, 40, 30, 20, 10) é uma P.A. finita.</li></ul>
@@ -210,10 +203,6 @@
                     <h2 id="EP">Espanhol</h2>
                     
                     <section id="sectionEP" class="">
-                        <div class="search-box">
-                            <input id="SearchEPL" class="search-txt" type="" name="entrada" search="listaEPL" placeholder="Pesquise a matéria designada">
-                        </div>
-                        <i class="fas fa-search"></i> <br>
                         <h3>Clique no botão pra abrir a matéria.</h3>
                         <section id="sectionFS" class="">
                         <!--Barra de pesquisa-->
@@ -221,7 +210,7 @@
                         <ul id="listaEPL">
                             <li nome = "técnicas de leitura">
                                 <button class="acordeon" onclick="OpenCloseTCL()">Técnicas de leitura</button>
-                                <section id="sectionTCL" class="OpenClose">
+                                <section id="sectionTCL" class="OpenClose corFundo">
                                     <ul class="ulColn">
                                         <li>
                                             <strong>Leia o título e o subtítulo</strong> (caso haja): faça uma leitura atenta de ambas as informações pois isso pode ajudar você a ter uma noção de contexto em relação ao tema que será apresentado.
@@ -242,51 +231,28 @@
                     </section>
                 </li>
                 
-                <li nome="espanhol">
-                    <h2 id="EP">Espanhol</h2>
+                <li nome="história">
+                    <h2 id="HT">História</h2>
                     
                     <section id="sectionHT" class="">
-                        <div class="search-box">
-                            <input id="SearchEPL" class="search-txt" type="" name="entrada" search="listaHT" placeholder="Pesquise a matéria designada">
-                        </div>
-                        <i class="fas fa-search"></i> <br>
                         <h3>Clique no botão pra abrir a matéria.</h3>
-                        <section id="sectionFS" class="">
-                        <!--Barra de pesquisa-->
-                        
-                        <ul id="listaHT">
-                            <li nome = "revolução russa">
-                                <button class="acordeon" onclick="OpenCloseTCL()">Técnicas de leitura</button>
-                                <section id="sectionTCL" class="OpenClose">
-                                    <ul class="ulColn">
-                                        <li>
-                                            <strong>Leia o título e o subtítulo</strong> (caso haja): faça uma leitura atenta de ambas as informações pois isso pode ajudar você a ter uma noção de contexto em relação ao tema que será apresentado.
-                                        </li>
-                                        <li>
-                                            <strong>Verifique a fonte do texto</strong>: através dessa informação você pode conseguir identificar o tipo de texto da questão. Em provas anteriores, foram utilizados poemas, artigos de revista/jornal, anúncios, cartuns, etc.
-                                        </li>
-                                        <li>
-                                            <strong>Observe a imagem com atenção </strong>(caso haja): fique atento a todos os elementos da imagem: objetos, plano de fundo e expressões faciais, por exemplo. Quem sabe não está aí a resposta que você procura.
-                                        </li>
-                                        <li>
-                                            <strong>Confira a pergunta e as alternativas de resposta</strong>: a primeira coisa que você deve fazer, antes mesmo de começar a ler o texto, é ler o enunciado da questão e compreender as alternativas de resposta. A resolução do exercício será facilitada dessa forma, pois você já terá uma ideia do tipo de informação que deve procurar no texto.
-                                        </li>
-                                    </ul>
-                                </section>    
-                            </li>
-                        </ul> 
-                    </section>
+                        <section id="sectionHT" class="">
+                            <ul id="listaHT">
+                                <li nome = "revolução russa">
+                                    <button class="acordeon" onclick="OpenCloseRVR()">Revolução russa</button>
+                                    <section id="sectionRVR" class="OpenClose corFundo">
+                                        <h3>Introdução:</h3>
+                                    </section>    
+                                </li>
+                            </ul> 
+                        </section>
                 </li>
 
                 <li nome="português">
                     <!--tema-->
                     <h2 id="PT">Português</h2>
                     <!--seção da matéria-->
-                    <section id="sectionPT" class="OpenCloseFK">
-                        <div class="search-box">
-                            <input id="SearchPT" class="search-txt" type="" name="entrada" search="listaPT" placeholder="Pesquise a matéria designada">
-                        </div>
-                        <i class="fas fa-search"></i> <br>
+                    <section id="sectionPT" class="">
                         <h3>Clique no botão pra abrir a matéria.</h3>
                         
                         <ul id="listaPT">
@@ -297,7 +263,7 @@
                                 <section id="sectionRD" class="OpenClose">
                                     <!--Introdução-->
                                     <button class="subButton" onclick="OpenCloseIT()">Introdução</button>
-                                    <section id="sectionIT" class="OpenClose">
+                                    <section id="sectionIT" class="OpenClose corFundo">
                                         <h3>Introdução:</h3>
                                         <p>Uma <strong>boa introdução</strong> conversa diretamente com o título e o desenvolvimento do seu texto <br>
 
@@ -413,32 +379,19 @@
                     </section>
                 </li>
                 
-                <li nome="química">
-                    <!--tema-->
+                <li nome="química" class="OpenClose">
                     <h2 id="QM">Química</h2>
-                    <!--seção da matéria-->
                     <section id="sectionQM" class="OpenCloseFK">
-                        <!--<h3>Clique no botão pra abrir a matéria.</h3>
-                        Barra de pesquisa-->
-                        <!--<div class="search-box">
-                            <input id="SearchQM" class="search-txt" type="text" name="entrada" search="listaQM"  placeholder="Escreva uma matéria de matemática">
-                                    
-                            <a class="search-btn">
-                                <img src="./loupe-blue.svg" alt="loupe-blue" class="loupe-blue" width="25px" height="25px">
-                                <img src="./loupe-white.svg" alt="loupe-white" class="loupe-white" width="25px" height="25px">
-                            </a>
-                        </div>
-                        <i class="fas fa-search"></i> <br>-->
-                        <!--Lista para por na barra de pesquisa-->
+                        <h3>Clique no botão pra abrir a matéria.</h3>
+                        
                         <ul id="listaQM">
                             <!--lista de matérias-->
-                            <!--<li nome = "materia">
-                                Botão pra abir a matéria
-                                <--<button class="acordeon" onclick="OpenCloseTCL()"></button>
-                                <section id="sectionTCL" class="">
+                            <li nome = "materia">
+                                <button class="acordeon" onclick="OpenCloseETP()">Entalpia</button>
+                                <section id="sectionETP" class="OpenClose corFundo">
                                     conteúdo
                                 </section>    
-                            </li>-->
+                            </li>
                         </ul> 
                     </section>
                 </li>
@@ -448,17 +401,13 @@
                     <h2 id="FS">Física</h2>
                     <!--seção da matéria-->
                     <section id="sectionFS" class="">
-                        <div class="search-box">
-                            <input id="SearchFS" class="search-txt" type="" name="entrada" search="listaFS" placeholder="Pesquise a matéria designada">
-                        </div>
-                        <i class="fas fa-search"></i> <br>
                         <h3>Clique no botão pra abrir a matéria.</h3>
                         <!--Lista para por na barra de pesquisa-->
                         <ul id="listaFS">
                             <!--lista de matérias-->
                             <li nome = "eletrostática">
                                 <button class="acordeon" onclick="OpenCloseELT()">Eletrostática</button>
-                                <section id="sectionELT" class="OpenClose">
+                                <section id="sectionELT" class="OpenClose corFundo">
                                     <h3>Introdução:</h3>
                                     <p><strong>O que é carga elétrica?</strong></p>
                                     <p>É uma propriedade da partículas elementares que compõem o átomo, sendo que a carga do próton é <strong><em>positiva</em></strong> e do elétron é <strong><em>negativa</em></strong>.</p>
@@ -510,6 +459,24 @@
                             </li>
                         </ul> 
                     </section>
+                </li>
+
+                <li nome="biologia">
+                    <h2 id="BG">Biologia</h2>
+                    
+                    <section id="sectionBG" class="">
+                        <h3>Clique no botão pra abrir a matéria.</h3>
+                        <section id="sectionFS" class="">
+                            <ul id="listaBG">
+                                <li nome = "diversidade dos seres vivos">
+                                    <button class="acordeon" onclick="OpenCloseDSV()">Diversidade dos seres vivos</button>
+                                    <section id="sectionDSV" class="OpenClose corFundo">
+                                        <h3>Introdução:</h3>
+                                        
+                                    </section>    
+                                </li>
+                            </ul> 
+                        </section>
                 </li>
             </ul>
         </div>
