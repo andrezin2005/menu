@@ -33,6 +33,7 @@ body {
     height: 100%;
     width: 100%;
     justify-content:center;
+    background-color: white;
 }
 /*Cabeçario*/   
 header {
@@ -133,6 +134,9 @@ p {
     color: var(--cor-paragrafo--);
     /*Margem abaixo*/
     margin-bottom: 2.2rem;
+}
+ul {
+    list-style: none;
 }
 section ul {
     display: block;
@@ -316,6 +320,7 @@ header .menu-expanded .logo {
 
 @media (min-width: 818px) {
     .formulaIMG {
+        margin-bottom: 2rem;
         display: flex;
     }
     /*Barra de pesquisa*/
@@ -450,7 +455,9 @@ header .menu-expanded .logo {
         visibility: hidden;
     }
     /*Menu ativo*/
-    
+    .open-menu {
+        margin-top: 4px;
+    }
     body.menu-expanded .menu,
     body.menu-expanded button.close-menu {
         
@@ -583,7 +590,11 @@ button.acordeon:hover {
     flex-direction: column;
     transition: 0.8s;
 }
-
+section .corFundo {
+    background-color: rgba(148, 148, 148, 0.719);
+    margin-right: 5%;
+    margin-left: 5%;
+}
 
 /*Final do site*/
 footer {
