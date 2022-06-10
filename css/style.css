@@ -419,6 +419,12 @@ header .menu-expanded .logo {
 
 /*Quando o menu ta fechado*/
 @media (max-width: 818px) {
+    .botao svg {
+        margin-top: 4px;
+    }
+    body.menu-expanded .botao  svg {
+        margin-top: 0;
+    }
     #lista {
         justify-content: center;
     }
