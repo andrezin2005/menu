@@ -425,6 +425,10 @@ header .menu-expanded .logo {
     body #navigation {
         justify-content: center;
     }
+
+    .acordeon {
+        margin-left: 20px;
+    }
 }
 
 /*Quando o menu ta fechado*/
@@ -580,12 +584,10 @@ header .menu-expanded .logo {
 }
 .acordeon {
     text-transform: uppercase;
-    margin-left: 20px;
     color: #444;
     background-color: #eee;
     cursor: pointer;
     padding: 20px;
-    width: 76%;
     border: none;
     text-align: center;
     outline: none;
