@@ -1,5 +1,6 @@
 /*Geral*/
 * {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -434,6 +435,8 @@ header .menu-expanded .logo {
 /*Quando o menu ta fechado*/
 @media (max-width: 818px) {
     .block {
+        opacity: 0;
+        visibility: hidden;
         display: none;
     }
     .botao svg {
