@@ -231,7 +231,6 @@ header button {
     font-size: 1.6rem;
     font-weight: 700;
     /*Cor*/
-    color: white;
     /*Transformação do texto*/
     text-transform: uppercase;
     
@@ -252,9 +251,10 @@ header button {
     
 }
 a {
+    color: black;
     text-decoration: none;
 }
-a button{
+button{
     color: black;
 }
 a button:hover {
@@ -306,6 +306,11 @@ nav a {
     text-decoration: none;
     transition: 0.3s;
 }
+nav svg:hover {
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
 a:hover {
     color:red;
     opacity: 0.7;
@@ -378,43 +383,8 @@ header .menu-expanded .logo {
 
 
     /*Estrutura do site*/
-    button.btn {
-        /*Altura*/
-        height: 6.2rem;
-        /*Largura*/
-        width: 26.3rem;
-
-        /*Borda*/
-        border: none;
-        /*Raio da borda*/
-        border-radius: 4rem;
-        
-
-        /*Margem abaixo*/
-        margin-bottom: 6rem;
-        
-        /*Tamanho da fonte*/
-        font-size: 1.4rem;
-        font-weight: 700;
-        /*Cor*/
-        color: white;
-        /*Transformação do texto*/
-        text-transform: uppercase;
-        
-        /*Alinhamento*/
-        align-items: center;
-        /*Ajustamento do conteudo*/
-        justify-content: center;
-        /*Espaço entre os elementos*/
-        gap: 1.2rem;
-        /*Display*/
-        display: inline;
-        /*Margem esquerda*/
-        margin-left: 1rem;
-        /*Margem direita*/
-        margin-right: 1rem;
-        user-select: none;
-        
+    header {
+        display: block;
     }
     nav button {
         display: none;
