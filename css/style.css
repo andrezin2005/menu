@@ -251,8 +251,17 @@ header button {
 
     
 }
-.btn a {
+a {
     text-decoration: none;
+}
+a button{
+    color: black;
+}
+a button:hover {
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    background: rgb(0, 0, 0);
 }
 /*Animação do botão*/
 .btn:hover {
