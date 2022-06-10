@@ -409,6 +409,12 @@ header .menu-expanded .logo {
         font-size: 30px
     }
      
+    nav #menu {
+        display: none;
+    }
+    body#navigation {
+        justify-content: center;
+    }
 }
 
 /*Quando o menu ta fechado*/
@@ -488,10 +494,10 @@ header .menu-expanded .logo {
         padding-top: 5%;
  
     }
-    nav div.menu {
+    nav div.menu #menu {
         transform: translateY(100%);
     }
-    body.menu-expanded nav div.menu {
+    body.menu-expanded nav div.menu #menu {
         transform: translateY(0);  
         transition: 0.8s; 
     }
