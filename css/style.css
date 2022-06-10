@@ -153,7 +153,11 @@ e {
 }
 
 #lista {
-    display: block;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
 
 #Ref {
