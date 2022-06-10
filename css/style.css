@@ -135,6 +135,16 @@ p {
     /*Margem abaixo*/
     margin-bottom: 2.2rem;
 }
+#my-keen-slider {
+    margin-top: 1.4rem;
+    display: inline-flex;
+}
+.keen-slider__slide li {
+    list-style: none;
+}
+.keen-slider__slide {
+    list-style: none;
+}
 ul {
     list-style: none;
 }
