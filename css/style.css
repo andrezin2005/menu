@@ -251,6 +251,9 @@ header button {
 
     
 }
+.btn a {
+    text-decoration: none;
+}
 /*Animação do botão*/
 .btn:hover {
     transition: 0.5s;
