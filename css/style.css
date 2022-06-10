@@ -412,7 +412,7 @@ header .menu-expanded .logo {
     nav #menu {
         display: none;
     }
-    body#navigation {
+    body #navigation {
         justify-content: center;
     }
 }
